@@ -49,7 +49,7 @@ nav a:hover {
   display: flex;
   justify-content: space-around;
   margin-top: 200px;
-  height: 100vh;
+  height: 79vh;
 }
 .img img {
   background-color: none;
@@ -92,12 +92,9 @@ button:hover {
 
 .about-me {
   height: 100vh;
+  background-color: rgb(26, 32, 60);
 }
 
-.contact {
-  background-color: #1f2937;
-  height: 100vh;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -145,7 +142,6 @@ html {
   text-align: center;
   background-color: white;
   color: black;
-  margin-top: 50px;
   height: 200px;
 }
 
@@ -163,9 +159,12 @@ h5 {
   font-size: 50px;
   margin: 10px;
 }
-
+.footerlogo a {
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   /* Responsive adjustments for smaller screens */
+
   html {
     overflow-x: hidden;
   }
@@ -178,12 +177,18 @@ h5 {
     display: none; /* Hide navigation links on smaller screens */
   }
   .main {
+    position: relative;
+    top: -200px;
     flex-direction: column; /* Stack elements vertically on smaller screens */
-    align-items: center; /* Center elements vertically */
+    align-items: center;
+    margin-bottom: 50px; /* Center elements vertically */
   }
   .img {
     width: 80%; /* Make the image more responsive */
     margin-right: 0; /* Remove right margin */
+  }
+  nav {
+    position: relative;
   }
   .text {
     width: 80%; /* Adjust text width */
@@ -209,10 +214,18 @@ h5 {
     line-height: 30px;
     margin-bottom: 20px;
   }
+  .footer {
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
   .footer-content p,
-  h5 {
+  h5,
+  .h5 {
     letter-spacing: 5px;
     word-spacing: 2px;
+    margin-bottom: 15px;
   }
   .text {
     align-items: center;
